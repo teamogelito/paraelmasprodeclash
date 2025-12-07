@@ -1,0 +1,245 @@
+body{
+	/*background-image es para imagen de fondo*/
+	background-image:url("../imagenes/fondo.jpeg");
+	/*font-family es para la tipografia de letra, las comas sirven para señalar que si no se encuentra una tipografia, ponga otra de mi agrado*/
+	font-family:"Tahoma","Economica";
+	/*color es para el color de las letras*/
+	color:black;
+	/*font-size es para el tamaño de la letra en pixeles*/
+	font-size:40px;
+	text-align: center
+}
+hr{
+		/*border es para la linea
+		el grosor indica en pixeles, indicamos el tipo de linea 
+		y el codigo del color*/
+		border:6px solid blue;
+		/*width es para el ancho de la linea*/
+		width:80%;
+		/*border-radius es para agregar curva al borde*/
+		border-radius:5px;
+}
+p{
+	text-align: center;
+	font-size:10;
+	color:blue;
+	/*letras negritas*/
+	font-weight:bold;
+	/*interlineado de parrafo*/
+	line-height:1;
+	/*color de fondo de letras*/
+	background-color:#CBAEF5;
+	/*espacio entre letras*/
+	letter-spacing:1px;
+}
+table,tr,td{
+	/*Atributos para celdas de la tabla*/
+	border:3px solid #FFFFFF;
+	border-spacing:0;
+	background-color:#DAC1F4;
+	font-size:30px;
+	text-align:justify;
+	font-weight:bold;
+	font-family:"bb";
+}
+/*Clase para los pies de pagina*/
+.pie{
+	text-align:center;
+	font-size:16px;
+	font-family:"minecraft";
+	font-weight:bold;
+	color:blue;
+}
+.encabezado{
+	text-align:center;
+	font-size:40px;
+	font-weight:bold;
+	color:#2853E0;
+	font-family:"tomy";
+}
+div#ns{
+	text-align:center;
+	font-size:40px;
+	font-weight:bold;
+	color:black;
+	font-family:"ck";
+}
+
+
+div#top{
+	width:100%;
+	height:75px;
+	background-image:linear-gradient(#87B6F5,#5A96E6);
+	font-family:"bar"; /*poner el nombre de la fuente en el codigo inferior*/
+}
+div#ppag{
+	width:100%;
+	height:100px;
+	background-image:linear-gradient(#87B6F5,#5A96E6);
+	font-family:"minecraft";
+}
+/*carrousel de imagenes*/
+.carrousel{
+	width:600px;
+	margin:auto;
+	box-sizing:border-box;
+}
+.contecarrousel{
+	width:100%;
+	height:400px;
+	overflow:hidden;
+	box-sizing:border-box;
+}
+.itemcarrousel{
+	position:relative;
+	width:100%;
+	height:100%;
+	box-sizing:border-box;
+}
+.itemcarrouseltarjeta{
+	width:100%;
+	height:100%;
+	box-sizing:border-box;
+}
+.itemcarrouselarrows{
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	height:100%;
+	width:100%;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	padding:20px;
+	box-sizing:border-box;
+}
+.itemcarrouselarrows> i:hover{
+	cursor:pointer;
+}
+.contecarrouselcontroller{
+	width:100%;
+	display:flex;
+	justify-content:space-evenly;
+}
+.contecarrouselcontroller> a{
+	text-decoration:none;
+	font-size:32px;
+	color:grey;
+}
+.itemcarrouselarrows> a > i{
+	color:white;
+}
+/*cajas para productos*/
+.caja{
+	height:350px;
+	width:150px;
+	background:#F8DBF6;
+	border:1px solid #F8DBF6;
+	margin:5px;
+	color:black;
+	text-align:center;
+	display:inline-block;
+}
+.caja:hover{
+	box-shadow: 0 0 10px red;
+	transform:scale(1.3);
+}
+.caja-texto{
+	padding-top:5px;
+	padding-bottom:5px;
+	font-size:20px;
+	color:blue;
+	font-weight:bold;
+}
+.texto-adicional{
+	padding-top:5px;
+	font-size:15px;
+}
+.texto1{
+	padding-top:5px;
+	font-size:20px;
+	background-color:#D4CBF2;
+	font-family:"Economica";
+	font-weight:bold;
+}
+/*Menu de navegación*/
+.navegacion{
+	display:flex;
+	height:100px;
+}
+.navegacion-item{
+	flex:1;
+	color:#B1A2E8;
+	font-weight:bold;
+	font-size:18px;
+	display:flex;
+	transition: flex-grow 0.2s;
+	justify-content:center;
+	align-items:center;
+}
+.navegacion-titulo{
+	margin:0;
+	transform:rotate(-90deg);
+	transition:transform 0.2s 0.2s;
+}
+.navegacion-item:hover{
+	flex-grow:10;
+}
+.navegacion-item:hover .navegacion-titulo{
+	transform:rotate(0);
+}
+.navegacion-item:nth-child(1){
+	background:#B1CFF0;
+}
+.navegacion-item:nth-child(2){
+	background:#90BAE8;
+}
+.navegacion-item:nth-child(3){
+	background:#90BAE8;
+}
+.navegacion-item:nth-child(4){
+	background:#90BAE8;
+}
+.cua{
+	text-align:center;
+	display:flex;
+	border:5px solid #EBB3F0;
+	padding:50px;
+	max-width:700px;
+	background-color:#F4BDF9;
+}
+.image{
+	width:250px;
+	height:180px;
+	background-image:url(../imagenes/logotipo.jpg);
+	background-size:cover;
+	background-position:center;
+	margin-right:20px;
+}
+.text{
+	font-size:25px;
+}
+.navegacion-itemq{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+/*fuentes-tipograficas*/
+@font-face{
+	font-family:"bar";
+	src:url(../fuentes/bar.ttf);
+}
+@font-face{
+	font-family:"tomy";
+	src:url(../fuentes/tomy.ttf);
+}
+@font-face{
+	font-family:"minecraft";
+	src:url(../fuentes/minecraft.ttf);
+}
+@font-face{
+	font-family:"ck";
+	src:url(../fuentes/ck.ttf);
+}
